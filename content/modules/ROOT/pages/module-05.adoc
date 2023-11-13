@@ -1,0 +1,51 @@
+Change user to the *rhel* user so that the session can be recorded.
+
+[source,bash]
+----
+su - rhel
+----
+
+You will notice that when the `+bash+` session starts, the *rhel* user
+receives the notice message configured in the *tlog* configuration.
+
+[source,bash]
+----
+root@rhel:~# su - rhel
+Last login: Thu Feb  3 19:21:21 UTC 2022 from ::ffff:136.32.60.35 on web console
+Locale charset is ANSI_X3.4-1968 (ASCII)
+Assuming locale environment is lost and charset is UTF-8
+
+ATTENTION! Your session is being recorded!
+
+[rhel@rhel ~]$
+----
+
+Run some commands in the *rhel* user’s session.
+
+[source,bash]
+----
+ls /tmp
+----
+
+[source,bash]
+----
+who
+----
+
+[source,bash]
+----
+df -hP
+----
+
+[source,bash]
+----
+dnf list installed
+----
+
+Now that you have some data in a recorded session, you can log out of
+the user’s terminal session.
+
+[source,bash]
+----
+exit
+----
