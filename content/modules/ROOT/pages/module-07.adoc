@@ -13,6 +13,14 @@ will search through the journal log and locate strings that contain the
 journalctl -o verbose | grep -P "\"rec\".*?\,"
 ----
 
+.Output
+[source,text]
+----
+<< OUTPUT ABRIDGED >>
+
+
+----
+
 Below, is an example of one of those messages, but there will likely be
 more than one message associated with each session.
 

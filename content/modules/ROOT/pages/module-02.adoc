@@ -2,21 +2,51 @@ Now that the required software is installed, it is time to configure and
 enable terminal session recording. You will use the Web Console to
 perform this task.
 
-Use the _Web Console_ tab in your lab environment to log into the Web
-Console for the system. You should use the following credentials:
+Click on the link below titled *RHEL Web Console*, this will open the lab system’s Web Console in
+a new browser tab or window.
 
-Username: *rhel* Password: *redhat*
+[cols="1,1,1"]
+|===
+|*Username*
+|*Password*
+|*Red Hat Enterprise Linux Web Console*
 
-____
-*NOTE:* Problems accessing the Web Console or logging in? For best
+|{cockpit_user_name}
+|{cockpit_user_password}
+|{cockpit_url}[RHEL Web Console^]
+
+|===
+
+Click `*Advanced*`
+
+.Connection not private
+image::connection-not-private.png[Connection not private]
+
+Then click `*Proceed to rhel.xxxx.instruqt.io*`
+
+.Proceed
+image::proceed.png[Proceed]
+
+Once the login page is presented, use the following credentials to log
+into the Web Console:
+
+*Username:* {cockpit_user_name}
+*Password:* {cockpit_user_password}
+
+.Web Console Login
+image::Web-console-login.png[Web Console Login]
+
+Now that you are logged into the Web Console, we must turn on
+administrative access.
+
+Click `*Turn on administrative access*`.
+
+.admin access
+image::turn-on-admin.png[admin access]
+
+IMPORTANT: Problems accessing the Web Console or logging in? For best
 results, copy and paste the URL into Google Chrome.
-____
-
-Next, turn on administrative access. Click on the
-`+Turn on administrative access+` button.
-
-Enter the Password `+redhat+`.
 
 Now that you are logged into the Web console, and because you have
 installed the *cockpit-session-recording* rpm package, you can now
-select the _Session Recording_ option in the left-side navigation menu.
+select the *Session Recording* option in the left-side navigation menu.

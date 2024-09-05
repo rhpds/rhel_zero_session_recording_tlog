@@ -1,17 +1,21 @@
 Install two rpm packages, *cockpit-session-recording* and *tlog*.
 
-[source,bash]
+.Command
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 yum install -y cockpit-session-recording tlog
 ----
 
+.Output
+[source,text]
+----
 << OUTPUT ABRIDGED >>
 
 Installed: cockpit-session-recording-4-2.el8.noarch tlog-8-2.el8.x86_64
-
-Complete! ```
+Complete!
+----
 
 The first package, *cockpit-session-recording* will add an additional
-feature Web Console which you will be using to enable and configure
-session recording. The *tlog* package will provide the tools which will
+feature to the Red Hat Web Console which you will be using to enable and configure
+session recording. The *tlog* package will provide tools which will
 be used to both record and view the recorded terminal sessions.

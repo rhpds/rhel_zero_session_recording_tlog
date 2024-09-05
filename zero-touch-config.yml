@@ -5,7 +5,7 @@ antora:
   dir: www
   modules:
     - name: index
-      label: Module 1
+      label: Installing software
     - name: module-02
       label: Module 2
     - name: module-03
@@ -19,6 +19,8 @@ antora:
     - name: module-07
       label: Module 7
 tabs:
-  - name: terminal
+  - name: ">_ Terminal"
     port: 443
-    path: /wetty
+    path: /tty1
+    user: root
+    host: rhel
