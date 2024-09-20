@@ -1,3 +1,5 @@
+= Reviewing a recorded session in Web Console
+
 Navigate back over to the _Web Console_ tab in your lab environment.
 
 If you are not already on the _Session Recording_ page, please navigate
@@ -5,9 +7,15 @@ there.
 
 You should now see a recorded session available.
 
+.Recorded Session
+image::recorded-session.png[Recorded Session]
+
 After selecting the session, you will be taken to a page with an
 integrated player through which you can watch the session. Press the
 _Play_ button to review the session.
+
+.Recorded Session playback
+image::recorded-session-playback.png[Recorded Session Playback]
 
 The session was recorded in real-time, so if you started the `+bash+`
 session but did not start running commands immediately, you will see
