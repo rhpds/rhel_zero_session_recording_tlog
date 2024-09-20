@@ -1,6 +1,9 @@
+= Recording a session
+
 Change user to the *rhel* user so that the session can be recorded.
 
-[source,bash]
+.Command
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 su - rhel
 ----
@@ -8,7 +11,8 @@ su - rhel
 You will notice that when the `+bash+` session starts, the *rhel* user
 receives the notice message configured in the *tlog* configuration.
 
-[source,bash]
+.Output
+[source,text]
 ----
 root@rhel:~# su - rhel
 Last login: Thu Feb  3 19:21:21 UTC 2022 from ::ffff:136.32.60.35 on web console
@@ -22,22 +26,26 @@ ATTENTION! Your session is being recorded!
 
 Run some commands in the *rhel* user’s session.
 
-[source,bash]
+.Command
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls /tmp
 ----
 
-[source,bash]
+.Command
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 who
 ----
 
-[source,bash]
+.Command
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 df -hP
 ----
 
-[source,bash]
+.Command
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 dnf list installed
 ----
@@ -45,7 +53,8 @@ dnf list installed
 Now that you have some data in a recorded session, you can log out of
 the user’s terminal session.
 
-[source,bash]
+.Command
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 exit
 ----
