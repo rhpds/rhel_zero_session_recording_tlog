@@ -7,17 +7,17 @@ antora:
     - name: index
       label: Installing software
     - name: module-02
-      label: Module 2
+      label: Logging in and navigating Web Console
     - name: module-03
-      label: Module 3
+      label: Configuring and enabling session recording
     - name: module-04
-      label: Module 4
+      label: Reviewing the configuration
     - name: module-05
-      label: Module 5
+      label: Recording a session
     - name: module-06
-      label: Module 6
+      label: Reviewing a recorded session in Web Console
     - name: module-07
-      label: Module 7
+      label: Reviewing a recorded session from the command-line
 tabs:
   - name: ">_ Terminal"
     port: 443
