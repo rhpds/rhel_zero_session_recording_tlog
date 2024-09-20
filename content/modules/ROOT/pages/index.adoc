@@ -13,7 +13,7 @@ yum install -y cockpit-session-recording tlog
 ----
 << OUTPUT ABRIDGED >>
 
-Installed: cockpit-session-recording-4-2.el8.noarch tlog-8-2.el8.x86_64
+Installed: cockpit-session-recording-16-1.el9.noarch tlog-14-1.el9.x86_64
 Complete!
 ----
 
