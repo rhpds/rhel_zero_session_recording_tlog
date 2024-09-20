@@ -1,3 +1,5 @@
+= Logging in and navigating Web Console
+
 Now that the required software is installed, it is time to configure and
 enable terminal session recording. You will use the Web Console to
 perform this task.
