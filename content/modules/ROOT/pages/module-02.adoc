@@ -4,8 +4,7 @@ Now that the required software is installed, it is time to configure and
 enable terminal session recording. You will use the Web Console to
 perform this task.
 
-Click on the link below titled *RHEL Web Console*, this will open the lab system’s Web Console in
-a new browser tab or window.
+Use the Web Console tab in your lab environment to log into the *Web Console* for the system. You should use the following credentials:
 
 [cols="1,1,1"]
 |===
@@ -18,6 +17,8 @@ a new browser tab or window.
 |{cockpit_url}[RHEL Web Console^]
 
 |===
+
+_NOTE:_ Problems accessing the Web Console or logging in? For best results, copy and paste the URL into Google Chrome.
 
 Click `*Advanced*`
 
@@ -42,6 +43,7 @@ Now that you are logged into the Web Console, we must turn on
 administrative access.
 
 Click `*Turn on administrative access*`.
+Enter the Password redhat.
 
 .admin access
 image::turn-on-admin.png[admin access]
@@ -52,3 +54,6 @@ results, copy and paste the URL into Google Chrome.
 Now that you are logged into the Web console, and because you have
 installed the *cockpit-session-recording* rpm package, you can now
 select the *Session Recording* option in the left-side navigation menu.
+
+.Session recording option
+image::session-recording-option.png[Session recording option]
