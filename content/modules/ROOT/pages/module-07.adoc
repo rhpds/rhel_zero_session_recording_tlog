@@ -1,3 +1,5 @@
+= Reviewing a recorded session from the command-line
+
 The command to use to review recorded sessions from the command-line is
 `+tlog-play+`, which takes a session identifier to determine which
 session data to replay.
@@ -8,21 +10,17 @@ data, you will use the command `+journalctl+`. The following command
 will search through the journal log and locate strings that contain the
 `+rec+` string, plus the identifier included in that message.
 
-[source,bash]
+.Command
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 journalctl -o verbose | grep -P "\"rec\".*?\,"
 ----
 
-.Output
-[source,text]
-----
-<< OUTPUT ABRIDGED >>
-
-
-----
-
 Below, is an example of one of those messages, but there will likely be
 more than one message associated with each session.
+
+.Log message
+image::log-message.png[Log message]
 
 To replay the session, you run `+tlog-play+` with the session
 identifier, using the log message displayed above, the command would
@@ -37,7 +35,8 @@ be used for the replay. Once the replay is complete, your session will
 be returned to your control. You can interrupt the playback with a
 `+<CTRL>-C+`.
 
-[source,bash]
+.Command
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 tlog-play -r journal -M TLOG_REC=$(journalctl -o verbose | grep -P "\"rec\".*?\." | cut -d, -f3 | cut -d: -f2 | head -n 1 | sed -e s/\"//g)
 ----
