@@ -19,8 +19,8 @@ cat /etc/sssd/conf.d/sssd-session-recording.conf
 ----
 [session_recording]
 scope=all
-users=
-groups=
+exclude_users=
+exclude_groups=
 ----
 
 Changes to the other configuration options displayed by Web Console
